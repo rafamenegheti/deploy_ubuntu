@@ -7,6 +7,20 @@ app.get('/',(request, response) => {
     return response.json({ message: "Server is up!"});
 });
 
+app.get('/',(request, response) => {
+    const alunos = [
+        {
+            id: 584,
+            nome: "Rafael Menegheti",
+        },
+        {
+            id: 848,
+            nome: "José Aldo",
+        },
+    ]
+    return response.json(alunos);
+});
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)
 });
