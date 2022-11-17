@@ -7,7 +7,7 @@ app.get('/',(request, response) => {
     return response.json({ message: "Server is up!"});
 });
 
-app.get('/',(request, response) => {
+app.get('/alunos',(request, response) => {
     const alunos = [
         {
             id: 584,
